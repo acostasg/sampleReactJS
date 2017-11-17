@@ -1,16 +1,16 @@
-import React, {Component} from 'react';
-import Footer from './Footer';
-import Content from './Content';
+import React, { Component } from 'react';
 import Header from './Header';
-import {sections} from "../data/index";
+import Footer from './Footer';
+import /*Content,*/ { ContentClassComponent } from './Content';
+import { sections } from '../data';
 
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <Header/>
-                <Content sections={sections}/>
-                <Footer year='2017'/>
+            <div>
+                <Header title="My react app"/>
+                <ContentClassComponent sections={sections}/>
+                <Footer copyright="© 2017 Copyright Text" />
             </div>
         );
     }

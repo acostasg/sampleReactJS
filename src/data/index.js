@@ -192,4 +192,4 @@ const sections = [{
     }
 }];
 
-export {sections};
+export { sections };
